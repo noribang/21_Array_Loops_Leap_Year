@@ -18,6 +18,16 @@ $(document).ready(function() {
 		var result = leapYear(year);
 		console.log("year: " + year);
 		console.log("result: " + result);
-		$('#result').text(result);
+
+		$('.year').text(year);
+
+		if (!result) {
+			$('.not').text("not");
+		}
+		else {
+			$('.not').text("");
+		}
+
+		$('#result').show();
 	});
 });

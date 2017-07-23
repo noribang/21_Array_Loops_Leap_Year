@@ -1,7 +1,7 @@
 /* Business Logic */
 var leapYear = function(year) {
-	if ((year % 4 === 0) && (year % 100 !== 0)) {
-		console.log("if year is divisible by 4 && 100: " + year);
+	if (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)) {
+		console.log("if year is (divisible by 4 and not divisible by 100) or (divisible by 400): " + year);
 		return true;
 	}
 	else {
